@@ -15,7 +15,7 @@ public:
     Element();
     Element(string);
     virtual ~Element();
-    virtual void AcceptVisitor(const Visitor&) = 0 ;
+    virtual void AcceptVisitor(Visitor&) = 0 ;
     string getName();
 };
 #endif

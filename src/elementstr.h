@@ -11,7 +11,7 @@ public:
     ElementStr();
     ElementStr(string,string);
 
-    void AcceptVisitor(const Visitor&);
+    void AcceptVisitor(Visitor&);
     string getText();
 };
 

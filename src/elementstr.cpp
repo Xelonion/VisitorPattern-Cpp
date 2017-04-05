@@ -8,10 +8,10 @@ ElementStr::ElementStr(string n, string t)
 : Element(n),
  text(t)
 {}
-void ElementStr::AcceptVisitor(const Visitor& visitor)
+void ElementStr::AcceptVisitor(Visitor& visitor)
 {
     cout << "Accept Visiter in Str" << endl;
-    visitor.VisitElementStr(*this);
+    visitor.VisitElementStr(this);
 }
 string ElementStr::getText()
 {

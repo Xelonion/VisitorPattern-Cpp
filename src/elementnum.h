@@ -11,7 +11,7 @@ public:
     ElementNum();
     ElementNum(string,int);
 
-    virtual void AcceptVisitor(const Visitor&) override;
+    void AcceptVisitor(Visitor&);
     int getValue();
 };
 

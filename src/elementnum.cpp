@@ -8,10 +8,10 @@ ElementNum::ElementNum(string n, int v)
 : Element(n),
  value(v)
 {}
-void ElementNum::AcceptVisitor(const Visitor& visitor)
+void ElementNum::AcceptVisitor(Visitor& visitor)
 {
     cout << "Accept Visiter in Num" << endl;
-    visitor.VisitElementNum(*this);
+    visitor.VisitElementNum(this);
 }
 int ElementNum::getValue()
 {
