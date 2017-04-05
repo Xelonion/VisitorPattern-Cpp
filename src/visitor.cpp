@@ -14,11 +14,13 @@ Visitor::~Visitor()
 {}
 
 void Visitor::VisitElementNum(ElementNum* element) {
+    value = 0; str = "";
     value = element->getValue();
     cout << " ElementNum: " << element->getName() << ", " << value << endl;
 }
 
 void Visitor::VisitElementStr(ElementStr* element) {
+    value = 0; str = "";
     str = element->getText();
     cout << " ElementStr: " << element->getName() << ", "  << str << endl;
 }
